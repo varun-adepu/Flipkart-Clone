@@ -1,0 +1,44 @@
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+  position: relative;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+header {
+  background-color: lightgreen;
+  font-weight: 600;
+  padding: 20px 0;
+  transition: 0.6s;
+  z-index: 1000;
+}
+.logo::first-letter {
+  font-size: 44px;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 4px;
+  background-color: black;
+  top: 50%;
+  right: 55%;
+  transform: translate(0%, -100%);
+}
+
+.service-box {
+  margin-bottom: 10px;
+}
+
+.service-box:hover .service-desp h2 {
+  color: lightgreen;
+}
